@@ -143,6 +143,16 @@ echo queue-len 100 > fifo.file
 echo mode 0 > fifo.file
 ```
 
+编译失败
+/usr/bin/ld: cannot find -lrt
+/usr/bin/ld: cannot find -lstdc++
+/usr/bin/ld: cannot find -lm
+/usr/bin/ld: cannot find -lc
+安装依赖库
+yum install libstdc++*
+yum install glibc-static
+
+
 
 # wiki
 Check wiki for more info:
